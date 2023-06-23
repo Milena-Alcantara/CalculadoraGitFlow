@@ -6,7 +6,7 @@ public class Calculator {
 
     public void menuCalc() {
         System.out.println("-----------------------------------------------------");
-        System.out.println("Escolha a operação que você deseja fazer: \n[1] SOMA " + "            " + "[2] SUBTRAIR\n" +" [3] DIVIDIR" +  "         [4] SAIR");
+        System.out.println("Escolha a operação que você deseja fazer: \n[1] SOMA " + "      " + "[2] SUBTRAIR\n" + "[3] DIVIDIR " + "   " + "[4] MULTIPLICAR\n" + "         [5] SAIR");
         switch (scan.nextInt()) {
             case 1:
                 System.out.println("A soma dos números informados é igual a " + somarNumeros());
@@ -21,6 +21,10 @@ public class Calculator {
                 menuCalc();
                 break;
             case 4:
+                System.out.println("A multiplicação dos números informados é igual a " + multiplicarNumeros());
+                menuCalc();
+                break;
+            case 5:
                 System.out.println("Encerrando sistema...");
                 System.exit(0);
             default:
@@ -28,6 +32,7 @@ public class Calculator {
 
         }
     }
+
     public int somarNumeros() {
         int n1, n2;
 
@@ -50,6 +55,7 @@ public class Calculator {
         n2 = scan.nextInt();
         return n1 - n2;
     }
+
     public double dividirNumeros() {
         double n1, n2;
 
@@ -60,5 +66,18 @@ public class Calculator {
         n2 = scan.nextDouble();
 
         return n1 / n2;
-}
+    }
+
+    public int multiplicarNumeros() {
+
+        int n1, n2;
+
+        System.out.println("Informe um número: ");
+        n1 = scan.nextInt();
+
+        System.out.println("Informe um número: ");
+        n2 = scan.nextInt();
+
+        return n1 * n2;
+    }
 }
