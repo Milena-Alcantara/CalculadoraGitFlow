@@ -55,17 +55,7 @@ public class Calculator {
         return n1 - n2;
     }
 
-    /* public double dividirNumeros() {
-
-    double n1, n2;
-
-            System.out.println("Informe um número: ");
-    n1 = scan.nextDouble();
-
-            System.out.println("Informe um número: ");
-    n2 = scan.nextDouble();
-
-            return n1 / n2;
-
-}*/
+    public int dividirNumeros() {
+        return 0;
+}
 }
