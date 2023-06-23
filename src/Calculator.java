@@ -28,9 +28,7 @@ public class Calculator {
 
         }
     }
-
     public int somarNumeros() {
-
         int n1, n2;
 
         System.out.println("Informe um número: ");
@@ -43,7 +41,6 @@ public class Calculator {
     }
 
     public int subtrairNumeros() {
-
         int n1, n2;
 
         System.out.println("Informe um número: ");
@@ -51,10 +48,8 @@ public class Calculator {
 
         System.out.println("Informe um número: ");
         n2 = scan.nextInt();
-
         return n1 - n2;
     }
-
     public int dividirNumeros() {
         return 0;
 }
